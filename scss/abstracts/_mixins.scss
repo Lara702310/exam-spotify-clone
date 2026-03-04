@@ -1,0 +1,96 @@
+@use "./variables" as var;
+
+
+@mixin flex-column($justify: null, $align: null, $direction: null) {
+    display: flex;
+    flex-direction: $direction;
+    justify-items: $justify;
+    align-items: $align;
+}
+
+@mixin flex-wrap($justify: null, $align: null, $flex-wrap: null) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-content: $align;
+
+}
+
+@mixin flex-box($justify: null, $align: null) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@mixin grid-base($cols: 1,
+    $rows: none,
+    $gap: 0,
+    $justify: null,
+    $align: null) {
+    grid-template-columns: repeat($cols, 1fr);
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+    gap: $gap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-menu($grow: 0.5, $shrink: 0.5, $basis: auto) {
+    ul {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+        li {
+            flex: $grow $shrink $basis;
+        }
+    }
+}
+
+
+
+@mixin link-style($color, $hover-color) {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: $color;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $hover-color;
+
+        img,
+        .icon {
+            filter: brightness(1.2);
+            transform: translateY(-0.2rem);
+        }
+    }
+}
+
+
+@mixin font-style($size: null, $weight: null, $line: null, $letter: null, $color: null) {
+
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $weight {
+        font-weight: $weight;
+    }
+
+    @if $line {
+        line-height: $line;
+    }
+
+    @if $letter {
+        letter-spacing: $letter;
+    }
+
+    @if $color {
+        color: $color;
+    }
+
+}
+

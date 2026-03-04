@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as var;
+@import url('https://api.fontshare.com[]=satoshi@700,500,400&display=swap');
+
+
+
+
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3%;
+    line-height: auto;
+    color: var.$fs-hero;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 3%;
+    color: var.$fs-hero;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 3%;
+    color: var.$text-primary;
+}
+
+span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 3%;
+    color: var.$text-primary;
+}
+
+
+
+

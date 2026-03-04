@@ -1,0 +1,35 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+@use "../components/buttons" as bt;
+@use "../components/track-row" as tr;
+
+
+.footer-player-bar {
+    width: 80%;
+    padding-bottom: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 6rem;
+    z-index: 50;
+}
+
+.player-controls {
+    width: 100%;
+    height: 8.1rem;
+    display: flex;
+    justify-content: space-between;
+    border: 0.2rem solid var.$bg-base;
+    border-radius: 1rem;
+    background-color: var.$Fg-secondary;
+    padding: 0 0 0 1rem;
+
+
+}
+
+.track-info,
+.volume-controls {
+    
+    display: flex;
+    align-items: center;
+
+}

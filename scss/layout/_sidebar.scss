@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+@use "../components/buttons" as bt;
+@use "../components/track-row" as tr;
+
+
+.sidebar-nav-menu {
+    padding:0 1rem;
+
+    ul {
+        @include m.flex-column($justify: center, $direction: column);
+        gap: 2rem;
+
+        li {
+            height: 4rem;
+
+            a {
+                display: flex;
+
+                span {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+}

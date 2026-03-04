@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+@use "../components/buttons" as bt;
+
+
+.home-page {
+
+    .main-header_container {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+
+        display: grid;
+        grid-template-columns: 25.9rem 1fr 35.8rem;
+        grid-template-rows: 5.4rem 1fr 8.1rem;
+        grid-template-areas:
+            "header  header header"
+            "sidebar  main article"
+            "sidebar footer footer";
+
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+    }
+
+    .main-content {
+        grid-area: main;
+
+    }
+
+    .main-article {
+        grid-area: article;
+    }
+
+    .footer-player-bar {
+        grid-area: footer;
+        
+    }
+}
