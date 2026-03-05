@@ -43,12 +43,12 @@
     }
 
     img {
-        display: inline-block;
+        display: block;
         max-width: 100%;
         height: auto;
 
     }
-
+     
     *,
     *::before,
     *::after {
@@ -59,16 +59,15 @@
 
 html {
     font-size: 62.5%;
-    height: 100%;
-    scrollbar-gutter: stable;
-    scroll-behavior: smooth;
+
+
 }
 
 body {
-    height: 100%;
-    width: 100%;
+
     max-width: 179.1rem;
     margin-inline: auto;
+
     font-size: 1.4rem;
     font-family: 'Satoshi', sans-serif;
     line-height: 1.5;
@@ -76,24 +75,13 @@ body {
     color: var.$text-primary;
 
 
-    a {
-        padding: 0.5rem;
-        border-radius: 0.8rem;
-        display: flex;
-        align-items: center;
 
+}
 
-        &:hover {
-            background-color: var.$bg-btn-praymer;
-        }
-    }
+body,
+html {
 
-    a:hover span {
-        color: var.$font-activ;
-    }
-
-    a:hover .icon {
-        filter: brightness(0) invert(1) drop-shadow(0 0 1.5px var.$font-activ);
-    }
-
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }

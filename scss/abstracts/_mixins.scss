@@ -8,6 +8,14 @@
     align-items: $align;
 }
 
+@mixin flex-column($justify: center, $direction: column) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
 @mixin flex-wrap($justify: null, $align: null, $flex-wrap: null) {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +42,15 @@
     gap: $gap;
     justify-content: $justify;
     align-items: $align;
+    
 }
+
+@mixin grid-fill() {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+
+}
+
 
 @mixin flex-menu($grow: 0.5, $shrink: 0.5, $basis: auto) {
     ul {
@@ -48,6 +64,11 @@
     }
 }
 
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+
+}
 
 
 @mixin link-style($color, $hover-color) {
@@ -60,37 +81,18 @@
 
     &:hover {
         color: $hover-color;
-
-        img,
-        .icon {
-            filter: brightness(1.2);
-            transform: translateY(-0.2rem);
-        }
     }
 }
 
 
-@mixin font-style($size: null, $weight: null, $line: null, $letter: null, $color: null) {
-
-    @if $size {
-        font-size: $size;
-    }
-
-    @if $weight {
-        font-weight: $weight;
-    }
-
-    @if $line {
-        line-height: $line;
-    }
-
-    @if $letter {
-        letter-spacing: $letter;
-    }
-
-    @if $color {
-        color: $color;
-    }
-
+@mixin border-player {
+    border: 0.2rem solid var.$bg-base;
+    border-radius: 1rem;
+    background-color: var.$Fg-secondary;
+    padding: 2rem;
 }
 
+@mixin page-border {
+    border: 0.1rem solid var.$border-color;
+    border-radius: 1rem;
+}

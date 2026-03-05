@@ -1,0 +1,73 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+@use "../components/buttons" as bt;
+@use "../abstracts/nav-link" as nav;
+@use "../base/typography" as t;
+
+
+.main-content {
+    padding: 1rem;
+    @include m.page-border;
+    
+}
+
+.main-content_navigation {
+    padding: 0 1.5rem;
+    @include m.flex-between;
+
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        span {
+            padding: 0.8rem 1.5rem;
+            border-radius: 0.8rem;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: var.$font-activ;
+                color: var.$bg-btn-praymer;
+            }
+        }
+
+    }
+
+}
+
+.main-content-wrapper {
+    max-height: 86.9rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #1e1e1e #222;
+}
+
+.section-title {
+    width: 100%;
+    padding: 1rem;
+    @include m.flex-between;
+}
+
+.main-content_cards-container {
+    max-height: 31rem;
+    @include m.grid-fill;
+
+}
+
+.card {
+    width: 17rem;
+    height: 25.3rem;
+    @include m.flex-column($justify: center, $direction: column);
+    cursor: pointer;
+
+    span {
+        margin-left: 3rem;
+    }
+}
+
+.card:nth-child(2n+1) span {
+    color:var.$bg-sticker-err;
+}
+
+.card:nth-child(3n+1) span {
+    color: var.$bg-sticker;
+}

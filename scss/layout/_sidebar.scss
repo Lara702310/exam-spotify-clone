@@ -1,11 +1,16 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as m;
 @use "../components/buttons" as bt;
-@use "../components/track-row" as tr;
+@use "../abstracts/nav-link" as nav;
+@use "../base/typography" as t;
 
+.sidebar {
+    height: 100vh;
+     @include m.page-border;
+}
 
-.sidebar-nav-menu {
-    padding:0 1rem;
+.sidebar-nav_menu {
+    padding: 0 1rem;
 
     ul {
         @include m.flex-column($justify: center, $direction: column);
@@ -13,14 +18,11 @@
 
         li {
             height: 4rem;
-
-            a {
-                display: flex;
-
-                span {
-                    width: 15rem;
-                }
-            }
         }
     }
+}
+
+.sidebar__pins-nav-link {
+    @include m.flex-between;
+
 }

@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as m;
 @use "../components/buttons" as bt;
-@use "../components/track-row" as tr;
+@use "../abstracts/nav-link" as nav;
+@use "../base/typography" as t;

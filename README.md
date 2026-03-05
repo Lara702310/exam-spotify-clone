@@ -42,3 +42,17 @@ Layout: Defined in index.html using HTML5 semantic tags (<header>, <aside>, <mai
 
 # Styling:
  Each section has its own SCSS file in the scss directory.
+
+
+ # BEM Refactoring: Class names were partially rewritten to comply with the Block Element Modifier Methodology (BEM).
+
+ # HTML Optimization:
+ The HTML file structure was improved to enhance semantics and ensure proper interaction with the new class names.
+
+ # SASS/SCSS Mixins: 
+   Mixins were implemented to eliminate code duplication. They helped standardize fonts and frequently used styles (e.g., centering with flex).
+ # Second Page Design:
+ The layout and design of the second page of the project were fully completed. Visual consistency across all elements was ensured.
+  # Added preview file:
+  preview/(<preview/127.0.0.1_5500_home.html (1).png>),
+   preview/(<preview/127.0.0.1_5500_home.html (2).png>).
