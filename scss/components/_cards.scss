@@ -6,13 +6,39 @@
 
 
 
-.card-badge__items  {
+
+// ======= main-content__card =======
+.card {
+    width: 17rem;
+    height: 25.3rem;
+    @include m.flex-column($justify: center, $direction: column);
+    cursor: pointer;
+    figcaption {
+        padding: 0.5rem;
+        margin-top: 0.4rem;
+    }
+
+    span {
+        margin-left: 3rem;
+    }
+}
+
+.card:nth-child(2n+1) span {
+    color:var.$bg-sticker-err;
+}
+
+.card:nth-child(3n+1) span {
+    color: var.$bg-sticker;
+}
+
+
+.card-badge__items {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
 }
 
-.card-badge__label{
+.card-badge__label {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -25,4 +51,5 @@
         background-image: url(../../assets/icons/iconsIIbig.svg);
 
     }
+
 }

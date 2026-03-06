@@ -4,6 +4,28 @@
 @use "../components/buttons" as bt;
 
 
+.main-content-navigation {
+    padding: 0 1.5rem;
+    @include m.flex-between;
+
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        span {
+            padding: 0.8rem 1.5rem;
+            border-radius: 0.8rem;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: var.$font-activ;
+                color: var.$bg-btn-praymer;
+            }
+        }
+
+    }
+}
+
 
 .nav-link {
     @include m.flex-box( $align: center);

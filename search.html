@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Spotify Clone</title>
+    <title>Search</title>
 </head>
 
-<body class="main-page">
+<body class="search-page">
     <div class="main-app__container">
         <header class="main-header">
             <div class="main-header__navigation">
                 <nav class="main-header__nav-bar">
                     <ul>
-                        <li><a class="nav-link" href="#"><img class="nav-link__icon"
+
+                        <li><a class="nav-link" href="./index.html"><img class="nav-link__icon"
                                     src="./assets/icons/icons1-big.svg" alt="icon"><span
                                     class="nav-link__label">Home</span></a>
                         </li>
                         <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons2-big.svg"
                                     alt="icon"><span class="nav-link__label">Discover</span></a>
                         </li>
-                        <li><a class="nav-link" href="./search.html"><img class="nav-link__icon" src="./assets/icons/icons-3big.svg"
+                        <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons-3big.svg"
                                     alt="icon"><span class="nav-link__label">Search</span>
                             </a>
                         </li>
@@ -35,7 +36,7 @@
                         <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons5-big.svg"
                                     alt="icon"></a>
                         </li>
-                        <li><a class="nav-link" href="./home.html"><img class="nav-link__icon" src="./assets/icons/icons6-big.svg"
+                        <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons6-big.svg"
                                     alt="icon"></a>
                         </li>
                         <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons7-big.svg"
@@ -50,13 +51,13 @@
         </header>
 
         <!-- ==sidebar== -->
-        
         <aside class="sidebar">
             <nav class="sidebar-nav__menu">
                 <ul>
                     <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/Frame-102.svg"
                                 alt="icon"><span class="nav-link__label">My
                                 Library</span></a>
+
                     <li class="sidebar__pins-nav-link"><a class="nav-link" href="#"><img class="nav-link__icon"
                                 src="./assets/icons/icons8-big.svg" alt="icon"><span
                                 class="nav-link__label">Pins</span></a>
@@ -88,117 +89,50 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="main-content-navigation">
-                <nav>
-                    <ul>
-                        <li><a href="#"><span>All</span></a></li>
-                        <li><a href="#"><span>Music</span></a></li>
-                        <li><a href="#"><span>Podcasts</span></a></li>
-                        <li><a href="#"><span>Audiobooks</span></a></li>
-                    </ul>
-                </nav>
-                <a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/pc-home-add.svg"
-                        alt="icon"></a>
+            <div class="section-title"">
+                <h1>Recent searches</h1>
+                <a class=" nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/Name=More.svg"
+                    alt="#"></a>
             </div>
+
             <div class="main-content-wrapper">
 
-                <!-- ==section-made-for-you== -->
-                <section class="section-made-for-you">
-                    <div class="section-title">
-                        <h1>Made For You</h1>
-                        <ul>
-                            <li> <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=Arrow-Left.svg" alt=""></a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=Arrow-Right.svg" alt=""></a>
-                            </li>
-                            <li> <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=More.svg" alt=""></a></li>
-                        </ul>
+                <div class="main-content__cards-container">
+                    <div class="card">
+                        <figure>
+                            <img src="./assets/image/discover.png" alt="">
+                            <figcaption>
+                                <h2>Discover Weekly<span>50</span></h2>
+                                <p>Your weekly mixtape of fresh music.</p>
+                            </figcaption>
+                        </figure>
                     </div>
-                    <!-- ==main-content__cards-container== -->
-                    
-                    <div class="main-content__cards-container">
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/discover.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/daily-mix1.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/Frame3.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/Fram4.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/Frame5.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/Frame7.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="/assets/image/Frame1.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="/assets/image/Frame8.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="card">
+                        <figure>
+                            <img src="./assets/image/daily-mix1.png" alt="">
+                            <figcaption>
+                                <h2>Discover Weekly<span>50</span></h2>
+                                <p>Your weekly mixtape of fresh music.</p>
+                            </figcaption>
+                        </figure>
                     </div>
+                    <div class="card">
+                        <figure>
+                            <img src="./assets/image/Frame3.png" alt="">
+                            <figcaption>
+                                <h2>Discover Weekly<span>50</span></h2>
+                                <p>Your weekly mixtape of fresh music.</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
                 </section>
-                <!-- ==section-top-mixes== -->
-                <section class="section-top-mixes">
+                <!-- ==section-discover== -->
+                <h1>Browse all</h1>
+                <section class="section-discover">
                     <div class="section-title">
-                        <h1>Your top mixes</h1>
+                        <h2>Discover</h2>
                         <ul>
                             <li> <a class="nav-link" href="#"><img class="nav-link__icon"
                                         src="./assets/icons/Name=Arrow-Left.svg" alt=""></a>
@@ -207,8 +141,7 @@
                                 <a class="nav-link" href="#"><img class="nav-link__icon"
                                         src="./assets/icons/Name=Arrow-Right.svg" alt=""></a>
                             </li>
-                            <li> <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=More.svg" alt=""></a></li>
+
                         </ul>
                     </div>
                     <div class="main-content__cards-container">
@@ -286,10 +219,12 @@
                         </div>
                     </div>
                 </section>
-                <!-- ==section-Your-favorite-artists== -->
-                <section class="section-Your-favorite-artists">
+
+                <!-- ==section-genres== -->
+
+                <section class="section-genres">
                     <div class="section-title">
-                        <h1>Your favorite artists</h1>
+                        <h2>Genres</h2>
                         <ul>
                             <li> <a class="nav-link" href="#"><img class="nav-link__icon"
                                         src="./assets/icons/Name=Arrow-Left.svg" alt=""></a>
@@ -298,8 +233,7 @@
                                 <a class="nav-link" href="#"><img class="nav-link__icon"
                                         src="./assets/icons/Name=Arrow-Right.svg" alt=""></a>
                             </li>
-                            <li> <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=More.svg" alt=""></a></li>
+
                         </ul>
                     </div>
                     <div class="main-content__cards-container">
@@ -396,12 +330,10 @@
                     </div>
                 </section>
 
-                
+
             </div>
         </main>
-
         <!-- <article class="main-article">
-
         </article> -->
         <footer class="bottom-player">
             <div class="bottom-player__container">
@@ -433,7 +365,6 @@
                     </li>
                     <li><a href="#"><img class="player-btn" src="./assets/icons/Name=Queue.svg" alt=""></a></li>
                 </ul>
-
             </div>
         </footer>
     </div>
