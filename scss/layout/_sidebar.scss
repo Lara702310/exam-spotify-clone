@@ -6,7 +6,12 @@
 
 .sidebar {
     height: 100vh;
-     @include m.page-border;
+    @include m.page-border;
+
+    &:hover {
+        background-color: var.$bg-sd-bar-activ;
+    }
+
 }
 
 .sidebar-nav__menu {

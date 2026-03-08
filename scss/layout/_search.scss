@@ -8,7 +8,7 @@
 
 .search-page {
 
-    .main-app__container {
+    .main-app-container {
         width: 100%;
         height: 100vh;
         padding: 1rem;
@@ -24,12 +24,10 @@
 
     .main-header {
         grid-area: header;
-
     }
 
     .sidebar {
         grid-area: sidebar;
-
     }
 
     .main-content {
@@ -41,4 +39,104 @@
         grid-area: footer;
 
     }
+}
+
+.playlist-cards-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+
+}
+
+.playlist {
+    margin-top: 4rem;
+}
+
+.playlist-card--artist {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 1rem;
+    position: relative;
+    padding: 2rem;
+
+    img {
+        width: 10.4rem;
+        height: 10.4rem;
+
+        position: absolute;
+        bottom: 0rem;
+        right: -0.2rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.playlist-card--artist {
+    &.bg-a {
+        background-color: var.$bg-play-card-bl;
+    }
+
+    &.bg-b {
+        background-color: var.$bg-play-card-or;
+    }
+
+    &.bg-c {
+        background-color: var.$bg-play-card-bl;
+    }
+
+    &.bg-d {
+        background-color: var.$bg-play-card-fl;
+    }
+
+    &.bg-e {
+        background-color: var.$bg-play-card-a;
+    }
+
+    &.bg-f {
+        background-color: var.$bg-play-card-fl;
+    }
+
+    &.bg-g {
+        background-color: var.$bg-play-card-b;
+    }
+
+    &.bg-h {
+        background-color: var.$bg-play-card-or;
+    }
+
+    &.bg-i {
+        background-color: var.$bg-play-card-c;
+    }
+
+    &.bg-j {
+        background-color: var.$bg-play-card-d;
+    }
+
+    &.bg-k {
+        background-color: var.$bg-play-card-h;
+    }
+
+    &.bg-l {
+        background-color: var.$bg-play-card-f;
+    }
+
+    &.bg-m {
+        background-color: var.$bg-play-card-e;
+    }
+
+    &.bg-n {
+        background-color: var.$bg-play-card-c;
+    }
+
+    &.bg-o {
+        background-color: var.$bg-play-card-g;
+    }
+
+    &.bg-p {
+        background-color: var.$bg-play-card-bl;
+    }
+
+    &.bg-q {
+        background-color: var.$bg-play-card-c;
+    }
+
 }

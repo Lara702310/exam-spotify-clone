@@ -11,20 +11,25 @@
     @include m.page-border;
 }
 
-
 .main-content-wrapper {
+    padding: 0.5rem;
     max-height: 86.9rem;
     overflow-y: auto;
     scrollbar-width: none;
 }
 
-.section-title {
+.main-content-section__title {
     width: 100%;
     padding: 1rem;
     @include m.flex-between;
 }
 
-.main-content__cards-container {
-    max-height: 31rem;
+.main-content__music-cards-container {
+    height: 24rem;
+    width: 100%;
+    padding: 0.5rem;
     @include m.grid-fill;
+
 }
+
+

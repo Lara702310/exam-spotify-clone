@@ -1,0 +1,54 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as m;
+@use "../components/buttons" as bt;
+@use "../abstracts/nav-link" as nav;
+@use "../base/typography";
+@use "../components/cards";
+
+
+.liked-songs-content-navigation {
+    height: 10%;
+    padding: 1rem;
+    @include m.flex-between;
+    flex-direction: row-reverse;
+
+}
+
+// =========  liked-songs-library__table  =======
+
+.liked-songs-library__table {
+    width: 98%;
+    margin: 0 auto;
+    padding: 1rem 1.6rem;
+    border-collapse: collapse;
+
+}
+
+.liked-songs-library__table-head th {
+    padding: 1rem 1.6rem;
+    text-align: left;
+    border-bottom: 0.1rem solid #282828;
+}
+
+.table__icon {
+    width: 50%;
+}
+
+.liked-songs-library__track-row {
+    transition: background-color 0.2s ease;
+    height: 6.7rem;
+
+    &:hover {
+        background-color: #2a2a2a;
+
+    }
+}
+
+.liked-songs-library__table td {
+    padding: 1rem;
+}
+
+.liked-songs-library__track-img {
+    width: 4.5rem;
+    height: 4.1rem;
+}

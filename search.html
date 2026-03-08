@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Search</title>
 </head>
 
 <body class="search-page">
-    <div class="main-app__container">
+    <div class="main-app-container">
         <header class="main-header">
-            <div class="main-header__navigation">
+            <div class="main-header-navigation">
                 <nav class="main-header__nav-bar">
                     <ul>
-
                         <li><a class="nav-link" href="./index.html"><img class="nav-link__icon"
                                     src="./assets/icons/icons1-big.svg" alt="icon"><span
                                     class="nav-link__label">Home</span></a>
@@ -36,8 +35,8 @@
                         <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons5-big.svg"
                                     alt="icon"></a>
                         </li>
-                        <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons6-big.svg"
-                                    alt="icon"></a>
+                        <li><a class="nav-link" href="./home.html"><img class="nav-link__icon"
+                                    src="./assets/icons/icons6-big.svg" alt="icon"></a>
                         </li>
                         <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons7-big.svg"
                                     alt="icon"></a>
@@ -49,15 +48,12 @@
                 </nav>
             </div>
         </header>
-
-        <!-- ==sidebar== -->
         <aside class="sidebar">
             <nav class="sidebar-nav__menu">
                 <ul>
-                    <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/Frame-102.svg"
-                                alt="icon"><span class="nav-link__label">My
+                    <li><a class="nav-link" href="./library.html"><img class="nav-link__icon"
+                                src="./assets/icons/Frame-102.svg" alt="icon"><span class="nav-link__label">My
                                 Library</span></a>
-
                     <li class="sidebar__pins-nav-link"><a class="nav-link" href="#"><img class="nav-link__icon"
                                 src="./assets/icons/icons8-big.svg" alt="icon"><span
                                 class="nav-link__label">Pins</span></a>
@@ -70,8 +66,8 @@
                         <a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons9-big.svg"
                                 alt="icon"></a>
                     </li>
-                    <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/icons11-big.svg"
-                                alt="icon"><span class="nav-link__label">Liked
+                    <li><a class="nav-link" href="./liked-songs.html"><img class="nav-link__icon"
+                                src="./assets/icons/icons11-big.svg" alt="icon"><span class="nav-link__label">Liked
                                 songs</span></a></li>
                     <li><a class="nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/iconsS-big.svg"
                                 alt="icon"><span class="nav-link__label">Saves</span></a></li>
@@ -89,248 +85,147 @@
             </nav>
         </aside>
         <main class="main-content">
-            <div class="section-title"">
-                <h1>Recent searches</h1>
+            <div class="main-content-section__title">
+                <h2>Recent searches</h2>
                 <a class=" nav-link" href="#"><img class="nav-link__icon" src="./assets/icons/Name=More.svg"
-                    alt="#"></a>
+                        alt="#"></a>
             </div>
-
             <div class="main-content-wrapper">
-
-                <div class="main-content__cards-container">
-                    <div class="card">
-                        <figure>
-                            <img src="./assets/image/discover.png" alt="">
-                            <figcaption>
-                                <h2>Discover Weekly<span>50</span></h2>
-                                <p>Your weekly mixtape of fresh music.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card">
-                        <figure>
-                            <img src="./assets/image/daily-mix1.png" alt="">
-                            <figcaption>
-                                <h2>Discover Weekly<span>50</span></h2>
-                                <p>Your weekly mixtape of fresh music.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="card">
-                        <figure>
-                            <img src="./assets/image/Frame3.png" alt="">
-                            <figcaption>
-                                <h2>Discover Weekly<span>50</span></h2>
-                                <p>Your weekly mixtape of fresh music.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
+                <div class="playlist-cards-container">
+                    <figure class="music-card__image">
+                        <img src="./assets/image/Daft-1Punk.png" alt="Daft Punk">
+                        <figcaption>
+                            <h3>Daft Punk</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="music-card__image">
+                        <img src="./assets/image/Frameoo8.png" alt="David Bowie">
+                        <figcaption>
+                            <h3>David Bowie</h3>
+                        </figcaption>
+                    </figure>
+                    <figure class="music-card__image">
+                        <img src="./assets/image/Frame3.png" alt="Black Holes">
+                        <figcaption>
+                            <h3>Black Holes...</h3>
+                        </figcaption>
+                    </figure>
                 </div>
-                </section>
-                <!-- ==section-discover== -->
-                <h1>Browse all</h1>
-                <section class="section-discover">
-                    <div class="section-title">
-                        <h2>Discover</h2>
+                <section class="playlist">
+                    <h2>Browse all</h2>
+                    <div class="main-content-section__title">
+                        <h3>Discover</h3>
                         <ul>
                             <li> <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=Arrow-Left.svg" alt=""></a>
+                                        src="./assets/icons/Name=Arrow-Left.svg" alt="icon"></a>
                             </li>
                             <li>
                                 <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=Arrow-Right.svg" alt=""></a>
+                                        src="./assets/icons/Name=Arrow-Right.svg" alt="icon"></a>
                             </li>
-
                         </ul>
                     </div>
-                    <div class="main-content__cards-container">
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/Frame-124.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="/assets/image/rock-mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/pop-mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/daft-punk.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/happy-mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/david-bowie.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/upbeat.mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/60smix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="playlist-cards-container">
+                        <figure class="playlist-card--artist bg-a">
+                            <figcaption>
+                                <h2>Made For
+                                    You</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm2.png" alt="Made For
+                                    You">
+                        </figure>
+                        <figure class="playlist-card--artist bg-b">
+                            <figcaption>
+                                <h2>New
+                                    Releases</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm1.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-c">
+                            <figcaption>
+                                <h2>Spotify Classics</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm3.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-d">
+                            <figcaption>
+                                <h2>Charts</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm4.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-e">
+                            <figcaption>
+                                <h2>Trending</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm5.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-f">
+                            <figcaption>
+                                <h2>Discover</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm6.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-g">
+                            <figcaption>
+                                <h2>Spotify
+                                    Singles</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm7.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-h">
+                            <figcaption>
+                                <h2>Decades</h2>
+                            </figcaption>
+                            <img src="./assets/image/imagesm8.png" alt="Spotify Playlist">
+                        </figure>
                     </div>
-                </section>
-
-                <!-- ==section-genres== -->
-
-                <section class="section-genres">
-                    <div class="section-title">
+                    <div class="main-content-section__title">
                         <h2>Genres</h2>
                         <ul>
-                            <li> <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=Arrow-Left.svg" alt=""></a>
+                            <li><a class="nav-link" href="#"><img class="nav-link__icon"
+                                        src="./assets/icons/Name=Arrow-Left.svg" alt="left"></a>
                             </li>
                             <li>
                                 <a class="nav-link" href="#"><img class="nav-link__icon"
-                                        src="./assets/icons/Name=Arrow-Right.svg" alt=""></a>
+                                        src="./assets/icons/Name=Arrow-Right.svg" alt="right"></a>
                             </li>
-
                         </ul>
                     </div>
-                    <div class="main-content__cards-container">
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/Frame-124.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="/assets/image/rock-mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/pop-mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/daft-punk.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/happy-mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/david-bowie.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/upbeat.mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/60smix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/upbeat.mix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="card">
-                            <figure>
-                                <img src="./assets/image/60smix.png" alt="">
-                                <figcaption>
-                                    <h2>Discover Weekly<span>50</span></h2>
-                                    <p>Your weekly mixtape of fresh music.</p>
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="playlist-cards-container">
+                        <figure class="playlist-card--artist bg-i">
+                            <figcaption><h2>Pop</h2></figcaption>
+                            <img src="./assets/image/imagesm9.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-j">
+                            <figcaption><h2>Country</h2></figcaption>
+                            <img src="./assets/image/imagesm10.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-k">
+                            <figcaption><h2>Hip-Hop</h2></figcaption>
+                            <img src="./assets/image/imagesm11.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-l">
+                            <figcaption><h2>Rock</h2></figcaption>
+                            <img src="./assets/image/imagesm12.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-o">
+                            <figcaption><h2>Indie</h2></figcaption>
+                            <img src="./assets/image/imagesm13.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-a">
+                            <figcaption><h2>Punk</h2></figcaption>
+                            <img src="./assets/image/imagesm14.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-j">
+                            <figcaption><h2>Metal</h2></figcaption>
+                            <img src="./assets/image/image15.png" alt="Spotify Playlist">
+                        </figure>
+                        <figure class="playlist-card--artist bg-k">
+                            <figcaption><h2>Instrumental</h2></figcaption>
+                            <img src="./assets/image/imagesm16.png" alt="Spotify Playlist">
+                        </figure>
                     </div>
                 </section>
-
-
             </div>
         </main>
         <!-- <article class="main-article">

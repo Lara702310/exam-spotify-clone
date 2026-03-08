@@ -7,35 +7,35 @@
 
 
 
-// ======= main-content__card =======
-.card {
+// ======= main-content__cards-container =======
+.music-card--album {
     width: 17rem;
     height: 25.3rem;
-    @include m.flex-column($justify: center, $direction: column);
     cursor: pointer;
+
     figcaption {
         padding: 0.5rem;
-        margin-top: 0.4rem;
     }
 
-    span {
-        margin-left: 3rem;
+    img {
+        width: 100%;
     }
 }
 
-.card:nth-child(2n+1) span {
-    color:var.$bg-sticker-err;
+.music-card--album:nth-child(2n+1) span {
+    color: var.$bg-sticker-err;
 }
 
-.card:nth-child(3n+1) span {
+.music-card--album:nth-child(3n+1) span {
     color: var.$bg-sticker;
 }
 
+// ================= "main-article__card-badge  ==============
 
 .card-badge__items {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card-badge__label {
@@ -50,6 +50,82 @@
         height: 3rem;
         background-image: url(../../assets/icons/iconsIIbig.svg);
 
+    }
+
+}
+
+// ========== Library  cards =========
+
+.music-card--artist {
+    width: 17rem;
+    height: 25rem;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+        display: inline-block;
+        content: " ";
+        width: 4rem;
+        height: 4rem;
+        padding: 0.2rem;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        background-image: url(../../assets/icons/Vector38.svg);
+        background-position: center;
+        background-color: var.$bg-image-sticker;
+        position: absolute;
+        top: 1rem;
+        left: 14rem;
+        z-index: 1;
+    }
+
+    figcaption {
+        padding: 0.5rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+.music-card__label {
+    text-align: center;
+}
+
+// ======== style  figcaption: h4  ===========
+
+
+.music-card__info {
+    @include m.flex-between;
+}
+
+
+// ================  style:  search cards   ======
+
+.music-card__image {
+    padding: 1rem;
+    width: 17rem;
+    height: 17rem;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        display: inline-block;
+        content: " ";
+        width: 5rem;
+        height: 5rem;
+        background-image: url(../../assets/icons/icons-xxbig.svg);
+        position: absolute;
+        background-repeat: no-repeat;
+
+        top: 1rem;
+        left: 14rem;
+        z-index: 1;
+    }
+
+    figcaption {
+        padding: 2rem;
     }
 
 }

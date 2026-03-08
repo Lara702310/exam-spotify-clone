@@ -56,3 +56,14 @@ Layout: Defined in index.html using HTML5 semantic tags (<header>, <aside>, <mai
   # Added preview file:
   preview/(<preview/127.0.0.1_5500_home.html (1).png>),
    preview/(<preview/127.0.0.1_5500_home.html (2).png>).
+
+   ## Update Log
+
+I've just added 4 new pages to the project: `search.html`, `song.html`, `library.html`, and `liked-songs.html`. 
+
+Along with the new layouts, I've updated the stylesheets to ensure a consistent look across the app. I also took some time to clean up the code by fixing class names and modifiers to follow better naming conventions.
+  # Added preview file:
+  preview/(<preview/127.0.0.1_5500_home.html (3).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (4).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (5).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (6).png>),

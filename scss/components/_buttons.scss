@@ -2,6 +2,8 @@
 
 
 
+// ================ FOOTER :  bottom-player__container  ========
+
 .player-btn__primary {
     width: 3.8rem;
     height: 3.8rem;
@@ -28,5 +30,37 @@
 
 .player-btn:hover {
     filter: brightness(0) invert(1) contrast(2) drop-shadow(0 0 1.5px var.$hover-color);
+}
+
+// =========== song-page buttons style =========
+
+.playlist__btn {
+    padding: 0.5rem 1.8rem;
+    border-radius: 4.4rem;
+    border: 0.2rem solid var.$Fg-secondary;
+
+    &:hover {
+        color: var.$font-activ;
+        background-color: var.$bg-table-row;
+    }
+
+}
+
+.btn-lirics {
+    border-bottom: 0.2rem solid var.$border-color;
+
+    &:hover {
+        border-color: var.$bg-play-icon;
+    }
+
+}
+
+.player-btn--active img {
+    transition: filter 0.3s ease;
+}
+
+.player-btn--active:hover img {
+
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(118deg) brightness(118%) contrast(119%);
 }
 

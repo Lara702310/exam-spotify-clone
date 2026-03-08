@@ -11,6 +11,9 @@
 @use "./layout/home";
 @use "./layout/footer";
 @use "./layout/search";
+@use "./layout/library";
+@use "./layout/liked-songs";
+@use "./layout/song";
 
 
 
@@ -18,7 +21,7 @@
 
 
 
-    .main-app__container {
+    .main-app-container {
         width: 100%;
         height: 100vh;
         padding: 1rem;
