@@ -6,14 +6,12 @@
 @use "../components/cards";
 
 
-
 .main-header-navigation {
     width: 100%;
     height: 5.4rem;
     background-color: var.$bg-base;
     @include m.flex-between;
     @include m.page-border;
-
 }
 
 .main-header__nav-bar {

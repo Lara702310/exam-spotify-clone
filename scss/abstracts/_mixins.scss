@@ -1,7 +1,7 @@
 @use "./variables" as var;
 
 
-@mixin flex-column($justify: null, $align: null, $direction: null) {
+@mixin flex-column-items($justify: null, $align: null, $direction: null) {
     display: flex;
     flex-direction: $direction;
     justify-items: $justify;
@@ -10,7 +10,7 @@
 
 @mixin flex-column($justify: null, $direction: column) {
     display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
     justify-content: $justify;
 
 }
@@ -21,7 +21,6 @@
     flex-wrap: wrap;
     justify-content: $justify;
     align-content: $align;
-
 }
 
 @mixin flex-box($justify: null, $align: null) {
@@ -30,20 +29,6 @@
     align-items: $align;
 }
 
-
-@mixin grid-base($cols: 1,
-    $rows: none,
-    $gap: 0,
-    $justify: null,
-    $align: null) {
-    grid-template-columns: repeat($cols, 1fr);
-    grid-template-columns: $cols;
-    grid-template-rows: $rows;
-    gap: $gap;
-    justify-content: $justify;
-    align-items: $align;
-    
-}
 
 @mixin grid-fill() {
     display: grid;
@@ -67,7 +52,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+@mixin flex-lyst {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -84,6 +74,7 @@
     }
 }
 
+// ======== Footer - player stile  =============
 
 @mixin player-border {
     border: 0.2rem solid var.$bg-base;
@@ -92,6 +83,7 @@
     padding: 2rem;
 }
 
+// ======= layout  border-style ==========
 @mixin page-border {
     border: 0.1rem solid var.$border-color;
     border-radius: 1rem;
@@ -104,8 +96,9 @@
     color: var.$font-activ;
 
 }
-@mixin flex-lyst {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+@mixin artists-title {
+   
+    font-size: 5rem;
+    color: var.$font-activ;
 }

@@ -27,7 +27,6 @@
     }
 }
 
-.sidebar__pins-nav-link {
+.sidebar__pins-nav-link { 
     @include m.flex-between;
-
 }

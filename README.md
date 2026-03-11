@@ -67,3 +67,15 @@ Along with the new layouts, I've updated the stylesheets to ensure a consistent 
   preview/(<preview/127.0.0.1_5500_home.html (4).png>),
   preview/(<preview/127.0.0.1_5500_home.html (5).png>),
   preview/(<preview/127.0.0.1_5500_home.html (6).png>),
+
+  # I partially finished 3 pages. 
+  I applied modifiers to the classes using the BEM methodology.
+  Changed the style of the cards on the main page. Also changed the   hover effect.
+
+   # Added preview file:
+  preview/(<preview/127.0.0.1_5500_home.html (7).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (8).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (9).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (10).png>),
+
+  

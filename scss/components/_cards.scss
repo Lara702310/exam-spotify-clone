@@ -12,6 +12,9 @@
     width: 17rem;
     height: 25.3rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    position: relative;
 
     figcaption {
         padding: 0.5rem;
@@ -20,6 +23,27 @@
     img {
         width: 100%;
     }
+
+    .play-button {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        right: 0.8rem;
+        bottom: 0.8rem;
+        opacity: 0;
+        transform: translateY(0.8rem);
+        transition: all 0.3s ease;
+        box-shadow: 0 0.8rem 1.6rem var.$bg-base;
+    }
+
+    &:hover {
+        background: #282828;
+        .play-button {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
 }
 
 .music-card--album:nth-child(2n+1) span {
@@ -34,8 +58,13 @@
 
 .card-badge__items {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 1rem;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
 }
 
 .card-badge__label {
@@ -49,7 +78,6 @@
         width: 3rem;
         height: 3rem;
         background-image: url(../../assets/icons/iconsIIbig.svg);
-
     }
 
 }
@@ -88,13 +116,11 @@
     }
 }
 
-
 .music-card__label {
     text-align: center;
 }
 
 // ======== style  figcaption: h4  ===========
-
 
 .music-card__info {
     @include m.flex-between;
@@ -123,6 +149,19 @@
         left: 14rem;
         z-index: 1;
     }
+
+    figcaption {
+        padding: 2rem;
+    }
+
+}
+
+.music-card__image--round {
+    padding: 1rem;
+    width: 17rem;
+    height: 17rem;
+    position: relative;
+    text-align: center;
 
     figcaption {
         padding: 2rem;

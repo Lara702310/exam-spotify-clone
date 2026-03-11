@@ -89,7 +89,7 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 3%;
   color: rgb(224, 224, 224);
 }
@@ -210,7 +210,7 @@ html {
 .playlist__btn {
   padding: 0.5rem 1.8rem;
   border-radius: 4.4rem;
-  border: 0.2rem solid rgb(51, 56, 66);
+  border: 0.1rem solid rgb(51, 56, 66);
 }
 .playlist__btn:hover {
   color: rgb(224, 224, 224);
@@ -218,7 +218,7 @@ html {
 }
 
 .btn-lirics {
-  border-bottom: 0.2rem solid rgb(32, 32, 32);
+  border-bottom: 0.1rem solid rgb(32, 32, 32);
 }
 .btn-lirics:hover {
   border-color: rgb(30, 215, 96);
@@ -230,6 +230,16 @@ html {
 
 .player-btn--active:hover img {
   filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(118deg) brightness(118%) contrast(119%);
+}
+
+.artists__btn {
+  padding: 1rem 2rem;
+  background-color: rgb(137, 137, 137);
+  border-radius: 4.4rem;
+  color: rgb(224, 224, 224);
+}
+.artists__btn:hover {
+  background-color: rgb(51, 56, 66);
 }
 
 .main-content-navigation {
@@ -250,6 +260,31 @@ html {
 .main-content-navigation ul span:hover {
   background-color: rgb(224, 224, 224);
   color: rgb(29, 29, 29);
+}
+
+.sidebar-nav__menu a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.sidebar-nav__menu a img {
+  transition: filter 0.2s ease-in-out;
+}
+.sidebar-nav__menu a span {
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  transition: color 0.2s ease-in-out;
+}
+.sidebar-nav__menu a:hover {
+  background-color: rgb(29, 29, 29);
+}
+.sidebar-nav__menu a:hover span {
+  color: rgb(224, 224, 224);
+}
+.sidebar-nav__menu a:hover img {
+  filter: brightness(0) invert(1) contrast(2) drop-shadow(0 0 1.5px rgb(251, 249, 249));
 }
 
 .nav-link {
@@ -277,16 +312,51 @@ html {
   filter: brightness(0) invert(1) contrast(2) drop-shadow(0 0 1.5px rgb(251, 249, 249));
 }
 
+.link-active {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.8rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.link-active:hover strong {
+  color: rgb(224, 224, 224);
+}
+.link-active:hover img {
+  filter: brightness(0) invert(1) contrast(2) drop-shadow(0 0 1.5px rgb(251, 249, 249));
+}
+
 .music-card--album {
   width: 17rem;
   height: 25.3rem;
   cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  position: relative;
 }
 .music-card--album figcaption {
   padding: 0.5rem;
 }
 .music-card--album img {
   width: 100%;
+}
+.music-card--album .play-button {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  opacity: 0;
+  transform: translateY(0.8rem);
+  transition: all 0.3s ease;
+  box-shadow: 0 0.8rem 1.6rem rgb(6, 6, 6);
+}
+.music-card--album:hover {
+  background: #282828;
+}
+.music-card--album:hover .play-button {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .music-card--album:nth-child(2n+1) span {
@@ -299,8 +369,12 @@ html {
 
 .card-badge__items {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-bottom: 1rem;
+}
+.card-badge__items img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .card-badge__label {
@@ -375,6 +449,17 @@ html {
   z-index: 1;
 }
 .music-card__image figcaption {
+  padding: 2rem;
+}
+
+.music-card__image--round {
+  padding: 1rem;
+  width: 17rem;
+  height: 17rem;
+  position: relative;
+  text-align: center;
+}
+.music-card__image--round figcaption {
   padding: 2rem;
 }
 
@@ -480,7 +565,6 @@ html {
 .home-page .main-app-container {
   width: 100%;
   height: 100vh;
-  padding: 1rem;
   display: grid;
   grid-template-columns: 25.9rem 1fr 35.8rem;
   grid-template-rows: 5.4rem 1fr 8.1rem;
@@ -514,21 +598,18 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.main-article__title ul {
-  display: flex;
-}
 
 .bottom-player {
-  width: 79%;
+  width: 80%;
   position: fixed;
   bottom: 0;
-  right: 7rem;
+  right: 6rem;
   z-index: 50;
 }
 
 .bottom-player__container {
   width: 100%;
-  height: 8.1rem;
+  height: 8.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -547,7 +628,6 @@ html {
 .search-page .main-app-container {
   width: 100%;
   height: 100vh;
-  padding: 1rem;
   display: grid;
   grid-template-columns: 25.9rem 1fr 1fr;
   grid-template-rows: 5.4rem 1fr 9rem;
@@ -593,54 +673,122 @@ html {
 
 .playlist-card--artist.bg-a {
   background-color: rgb(30, 50, 100);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-a:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-b {
   background-color: rgb(186, 93, 7);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-b:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-c {
   background-color: rgb(30, 50, 100);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-c:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-d {
   background-color: rgb(141, 103, 171);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-d:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-e {
   background-color: rgb(176, 40, 151);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-e:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-f {
   background-color: rgb(141, 103, 171);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-f:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-g {
   background-color: rgb(119, 119, 119);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-g:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-h {
   background-color: rgb(186, 93, 7);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-h:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-i {
   background-color: rgb(20, 138, 8);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-i:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-j {
   background-color: rgb(216, 64, 0);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-j:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-k {
   background-color: rgb(83, 122, 161);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-k:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-l {
   background-color: rgb(0, 100, 80);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-l:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-m {
   background-color: rgb(80, 55, 80);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-m:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-n {
   background-color: rgb(20, 138, 8);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-n:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-o {
   background-color: rgb(233, 20, 41);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-o:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-p {
   background-color: rgb(30, 50, 100);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-p:hover {
+  background-color: rgb(51, 56, 66);
 }
 .playlist-card--artist.bg-q {
   background-color: rgb(20, 138, 8);
+  transition: background-color 0.3s ease;
+}
+.playlist-card--artist.bg-q:hover {
+  background-color: rgb(51, 56, 66);
 }
 
 .library-content-navigation {
@@ -648,7 +796,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 .main-content__cards-container-library {
@@ -669,43 +816,60 @@ html {
 }
 
 .liked-songs-library__table {
-  width: 98%;
+  max-width: 98%;
+  border-spacing: 0;
   margin: 0 auto;
-  padding: 1rem 1.6rem;
-  border-collapse: collapse;
 }
-
-.liked-songs-library__table-head th {
-  padding: 1rem 1.6rem;
+.liked-songs-library__table th {
   text-align: left;
-  border-bottom: 0.1rem solid #282828;
+  padding: 1rem 1.6rem;
+  border-bottom: 0.1rem solid rgb(42, 42, 42);
 }
-
-.table__icon {
-  width: 50%;
+.liked-songs-library__table th:nth-child(1) {
+  width: 3%;
 }
-
-.liked-songs-library__track-row {
-  transition: background-color 0.2s ease;
+.liked-songs-library__table th:nth-child(2) {
+  width: 20%;
+}
+.liked-songs-library__table th:nth-child(3) {
+  width: 20%;
+}
+.liked-songs-library__table th:nth-child(4) {
+  width: 5%;
+}
+.liked-songs-library__table th:nth-child(5) {
+  width: 40%;
+}
+.liked-songs-library__table tr {
   height: 6.7rem;
+  transition: background-color 0.2s ease;
 }
-.liked-songs-library__track-row:hover {
-  background-color: #2a2a2a;
+.liked-songs-library__table tr:hover {
+  background-color: rgb(42, 42, 42);
 }
-
 .liked-songs-library__table td {
   padding: 1rem;
 }
-
-.liked-songs-library__track-img {
+.liked-songs-library__table img {
   width: 4.5rem;
   height: 4.1rem;
+}
+.liked-songs-library__table--playlist-big {
+  width: 100%;
+}
+.liked-songs-library__table--playlist-big th:nth-child(2) {
+  width: 35%;
+}
+.liked-songs-library__table--playlist-big th:nth-child(3) {
+  width: 25%;
+}
+.liked-songs-library__table--playlist-big th:nth-child(4) {
+  width: auto;
 }
 
 .song-page .main-app-container {
   width: 100%;
   height: 100vh;
-  padding: 1rem;
   display: grid;
   grid-template-columns: 25.9rem 1fr 1fr;
   grid-template-rows: 5.4rem 1fr 9rem;
@@ -719,26 +883,33 @@ html {
 }
 .song-page .song-content {
   grid-area: main;
-  background-color: rgb(32, 32, 32);
+  background-color: rgba(37, 38, 43, 0.563);
 }
 .song-page .bottom-player {
   grid-area: footer;
 }
 
-.playlyst-banner-container {
+.song-content {
+  width: 100%;
+  height: 100%;
+  border: 0.1rem solid rgb(32, 32, 32);
+  border-radius: 1rem;
+}
+
+.playlist-banner-container {
   max-width: 128.3rem;
-  max-height: 50rem;
-  padding: 2rem;
+  height: 55rem;
+  padding: 2rem 0 0 2rem;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
-.playlyst-banner {
-  min-width: 40%;
+.playlist-banner {
+  max-width: 50rem;
 }
 
-.playlyst-artist-description {
+.playlist-artist-description {
   max-width: 55%;
   height: 5rem;
   display: flex;
@@ -746,14 +917,14 @@ html {
   gap: 1.8rem;
 }
 
-.playlyst-artist__title {
+.playlist-artist__title {
   font-size: 3.6rem;
   line-height: auto;
   letter-spacing: 2%;
   color: rgb(224, 224, 224);
 }
 
-.playlyst-card__actions {
+.playlist-card__actions {
   display: flex;
   align-items: center;
 }
@@ -822,10 +993,393 @@ hr {
   color: rgb(224, 224, 224);
 }
 
+.album-page .main-app-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25.9rem 1fr 1fr;
+  grid-template-rows: 5.4rem 1fr 9rem;
+  grid-template-areas: "sidebar header header " "sidebar  main   main " "sidebar footer  footer ";
+}
+.album-page .main-header {
+  grid-area: header;
+}
+.album-page .sidebar {
+  grid-area: sidebar;
+}
+.album-page .album-content {
+  grid-area: main;
+  background: linear-gradient(180deg, rgba(30, 40, 90, 0.4) 0%, rgb(25, 25, 25) 35%, rgb(10, 10, 10) 100%);
+}
+.album-page .bottom-player {
+  grid-area: footer;
+}
+
+.album-content {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.album-playlist-description {
+  height: 15rem;
+  width: 93rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.album-playlist-description a {
+  padding: 0;
+}
+.album-playlist-description--main-playlist-big {
+  width: 103rem;
+}
+
+.playlist-artist__title {
+  font-size: 3.6rem;
+  line-height: auto;
+  letter-spacing: 2%;
+  color: rgb(224, 224, 224);
+}
+
+.playlist-card__actions {
+  display: flex;
+  align-items: center;
+}
+
+.album-playlist-card__controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist-card__controls {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.album-banner {
+  padding-top: 2rem;
+  width: 40rem;
+  height: 76rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.album-banner--playlist-small {
+  max-width: 35rem;
+  max-height: 68rem;
+  padding: 1rem;
+}
+.album-banner__img {
+  max-width: 40rem;
+  max-height: 40rem;
+}
+.album-banner__img--playlist-small {
+  max-width: 32rem;
+  max-height: 32rem;
+}
+
+.playlist-nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.memories-artist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.album-library__table {
+  max-width: 90rem;
+  border-spacing: 0;
+  padding: 1rem 0;
+}
+.album-library__table th {
+  text-align: left;
+  padding: 1rem 1.2rem;
+  border-bottom: 0.1rem solid rgb(42, 42, 42);
+}
+.album-library__table th:nth-child(1) {
+  width: 3%;
+}
+.album-library__table th:nth-child(2) {
+  width: 60%;
+}
+.album-library__table th:nth-child(3) {
+  width: 15%;
+}
+.album-library__table th:nth-child(4) {
+  width: auto;
+}
+.album-library__table tr {
+  height: 6.5rem;
+  transition: background-color 0.2s ease;
+}
+.album-library__table tr:hover {
+  background-color: rgb(42, 42, 42);
+}
+.album-library__table td {
+  padding: 1rem;
+}
+.album-library__table img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.playlist-page .main-app-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25.9rem 1fr 1fr;
+  grid-template-rows: 5.4rem 1fr 9rem;
+  grid-template-areas: "sidebar header header " "sidebar  main   main " "sidebar footer  footer ";
+}
+.playlist-page .main-header {
+  grid-area: header;
+}
+.playlist-page .sidebar {
+  grid-area: sidebar;
+}
+.playlist-page .main-playlist-content {
+  grid-area: main;
+  background: linear-gradient(180deg, rgba(137, 137, 137, 0.25) 0%, rgb(59, 79, 182) 0%, rgb(6, 6, 6) 50%, rgb(32, 32, 32) 100%);
+}
+.playlist-page .bottom-player {
+  grid-area: footer;
+}
+
+.main-playlist-content {
+  width: 100%;
+  padding-top: 1rem;
+  border: 0.1rem solid rgb(32, 32, 32);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.artists-page .main-app-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25.9rem 1fr 1fr;
+  grid-template-rows: 5.4rem 1fr 9rem;
+  grid-template-areas: "sidebar header header " "sidebar  main   main " "sidebar footer  footer ";
+}
+.artists-page .main-header {
+  grid-area: header;
+}
+.artists-page .sidebar {
+  grid-area: sidebar;
+}
+.artists-page .artists-content {
+  grid-area: main;
+}
+.artists-page .bottom-player {
+  grid-area: footer;
+}
+
+.artists-content {
+  border: 0.1rem solid rgb(32, 32, 32);
+  border-radius: 1rem;
+}
+
+.logo-artist-name {
+  width: 100%;
+  height: 42rem;
+  padding: 2rem;
+  background: linear-gradient(rgba(1, 0, 1, 0.2), rgba(0, 0, 0, 0.7)), url(../../assets/image/image111.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo-artist-name__title {
+  width: 28rem;
+  height: 10rem;
+  text-align: left;
+}
+.logo-artist-name__title h1 {
+  font-size: 5rem;
+  color: rgb(224, 224, 224);
+}
+.logo-artist-name__title span {
+  color: rgb(224, 224, 224);
+}
+
+.artists-content__controls {
+  width: 20%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.artists-content__controls li {
+  align-items: center;
+}
+
+.artists-library-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artists-content-navigation ul {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.artists-content-navigation ul li {
+  flex: 0.03 0.9 auto;
+}
+.artists-content-navigation {
+  padding: 0.5rem;
+  width: 100%;
+  height: 6rem;
+  border-bottom: 0.2rem solid rgb(42, 42, 42);
+  border-collapse: collapse;
+}
+
+.nav__label {
+  font-size: 1.4rem;
+  padding: 1.65rem;
+}
+
+.album-library__table--artists-table {
+  width: 70%;
+  height: auto;
+  text-align: left;
+}
+.album-library__table--artists-table h2 {
+  font-size: 2rem;
+}
+.album-library__table--artists-table caption {
+  text-align: left;
+}
+.album-library__table--artists-table th {
+  border: none;
+}
+.album-library__table--artists-table .table__row:hover {
+  background-color: transparent;
+}
+.album-library__table--artists-table td {
+  text-align: left;
+}
+.album-library__table--artists-table td:nth-child(1) {
+  width: 5%;
+}
+.album-library__table--artists-table td:nth-child(2) {
+  width: 72%;
+}
+.album-library__table--artists-table td:nth-child(3) {
+  width: 10%;
+}
+.album-library__table--artists-table td:nth-child(4) {
+  width: auto;
+}
+
+.artists-repertoire {
+  width: 32rem;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.card-badge__items {
+  max-width: 30rem;
+  max-height: 15rem;
+}
+.card-badge__items--artists-card img {
+  width: 13rem;
+  height: 12rem;
+  padding: 0.5rem;
+}
+.card-badge__items--artists-card {
+  background-color: rgb(24, 25, 30);
+}
+.card-badge__items--artists-card figcaption {
+  padding-top: 1rem;
+}
+
+.card--artists-info {
+  max-width: 30rem;
+  max-height: 35rem;
+  padding: 0.2rem;
+}
+.card--artists-info figcaption {
+  padding: 0.2rem;
+}
+
+.articls-nav-bar {
+  width: 32rem;
+  height: 10rem;
+}
+
+.about-artist-page .main-app-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25.9rem 1fr 1fr;
+  grid-template-rows: 5.4rem 1fr 9rem;
+  grid-template-areas: "sidebar header header " "sidebar  main   main " "sidebar footer  footer ";
+}
+.about-artist-page .main-header {
+  grid-area: header;
+}
+.about-artist-page .sidebar {
+  grid-area: sidebar;
+}
+.about-artist-page .about-artist-content {
+  grid-area: main;
+}
+.about-artist-page .bottom-player {
+  grid-area: footer;
+}
+
+.about-artist-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1rem;
+}
+.about-artist-container .table-info,
+.about-artist-container .about-artist-sticker {
+  flex: 0 1 22%;
+  min-width: 20rem;
+  padding: 2rem;
+}
+.about-artist-container .artist-istory {
+  flex: 1 1 auto;
+  width: 76%;
+  padding: 1rem;
+}
+.about-artist-container .artist-istory p {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.table-info__items tr {
+  height: 7rem;
+}
+.table-info__items h2 {
+  font-size: 3rem;
+}
+.table-info__items h3 {
+  font-size: 2.3rem;
+}
+
 .main-page .main-app-container {
   width: 100%;
   height: 100vh;
-  padding: 1rem;
   display: grid;
   grid-template-columns: 25.9rem 1fr 1fr;
   grid-template-rows: 5.4rem 1fr 9rem;

@@ -37,7 +37,7 @@
 .playlist__btn {
     padding: 0.5rem 1.8rem;
     border-radius: 4.4rem;
-    border: 0.2rem solid var.$Fg-secondary;
+    border: 0.1rem solid var.$Fg-secondary;
 
     &:hover {
         color: var.$font-activ;
@@ -47,7 +47,8 @@
 }
 
 .btn-lirics {
-    border-bottom: 0.2rem solid var.$border-color;
+   
+    border-bottom: 0.1rem solid var.$border-color;
 
     &:hover {
         border-color: var.$bg-play-icon;
@@ -60,7 +61,19 @@
 }
 
 .player-btn--active:hover img {
+    filter: var.$bg-activ-gradient;
 
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(118deg) brightness(118%) contrast(119%);
+
 }
 
+.artists__btn {
+    padding: 1rem 2rem;
+    background-color: var.$bg-btn-secondary;
+    border-radius: 4.4rem;
+    color: var.$font-activ;
+
+    &:hover {
+        background-color: var.$Fg-secondary;
+    }
+
+}

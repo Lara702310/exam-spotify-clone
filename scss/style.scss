@@ -2,8 +2,8 @@
 @use "./base/typography" ;
 @use "./base/reset";
 @use "./abstracts/mixins" as m;
-@use "./components/buttons" as bt;
-@use "./abstracts/nav-link" as nav;
+@use "./components/buttons" ;
+@use "./abstracts/nav-link";
 @use "./components/cards";
 @use "./layout/header";
 @use "./layout/sidebar";
@@ -14,17 +14,19 @@
 @use "./layout/library";
 @use "./layout/liked-songs";
 @use "./layout/song";
+@use "./layout/album";
+@use "./layout/playlist";
+@use "./layout/artists";
+@use "./layout/about-artist";
 
 
 
 .main-page {
 
-
-
     .main-app-container {
         width: 100%;
         height: 100vh;
-        padding: 1rem;
+       
 
         display: grid;
         grid-template-columns: 25.9rem 1fr 1fr;

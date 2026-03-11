@@ -16,39 +16,76 @@
 
 // =========  liked-songs-library__table  =======
 
+
 .liked-songs-library__table {
-    width: 98%;
+
+    max-width: 98%;
+    border-spacing: 0;
     margin: 0 auto;
-    padding: 1rem 1.6rem;
-    border-collapse: collapse;
 
-}
+    th {
+        text-align: left;
+        padding: 1rem 1.6rem;
+        border-bottom: 0.1rem solid var.$bg-table-row;
 
-.liked-songs-library__table-head th {
-    padding: 1rem 1.6rem;
-    text-align: left;
-    border-bottom: 0.1rem solid #282828;
-}
+        &:nth-child(1) {
+            width: 3%;
+        }
 
-.table__icon {
-    width: 50%;
-}
+        &:nth-child(2) {
+            width: 20%;
+        }
 
-.liked-songs-library__track-row {
-    transition: background-color 0.2s ease;
-    height: 6.7rem;
+        &:nth-child(3) {
+            width: 20%;
+        }
 
-    &:hover {
-        background-color: #2a2a2a;
+        &:nth-child(4) {
+            width: 5%;
+        }
 
+        &:nth-child(5) {
+            width: 40%;
+        }
     }
-}
 
-.liked-songs-library__table td {
-    padding: 1rem;
-}
+    tr {
+        height: 6.7rem;
+        transition: background-color 0.2s ease;
 
-.liked-songs-library__track-img {
-    width: 4.5rem;
-    height: 4.1rem;
+        &:hover {
+            background-color: var.$bg-table-row;
+        }
+    }
+
+    td {
+        padding: 1rem;
+    }
+
+    img {
+        width: 4.5rem;
+        height: 4.1rem;
+    }
+
+    &--playlist-big {
+        width: 100%;
+    }
+
+    &--playlist-big {
+        th:nth-child(2) {
+            width: 35%;
+        }
+    }
+
+    &--playlist-big {
+        th:nth-child(3) {
+            width: 25%;
+        }
+    }
+
+    &--playlist-big {
+        th:nth-child(4) {
+            width: auto;
+        }
+    }
 }

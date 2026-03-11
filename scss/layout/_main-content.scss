@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as m;
-@use "../components/buttons" as bt;
-@use "../abstracts/nav-link" as nav;
+@use "../components/buttons";
+@use "../abstracts/nav-link";
 @use "../base/typography";
 @use "../components/cards";
 
@@ -31,5 +31,3 @@
     @include m.grid-fill;
 
 }
-
-
