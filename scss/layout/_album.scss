@@ -12,7 +12,7 @@
     .main-app-container {
         width: 100%;
         height: 100vh;
-       
+
 
         display: grid;
         grid-template-columns: 25.9rem 1fr 1fr;
@@ -49,7 +49,7 @@
     width: 100%;
     padding: 1rem;
     @include m.flex-box($justify: space-around);
-    
+
 }
 
 .album-playlist-description {
@@ -61,9 +61,7 @@
         padding: 0;
     }
 
-    &--main-playlist-big {
-        width: 103rem;
-    }
+
 }
 
 .playlist-artist__title {
@@ -92,21 +90,10 @@
     @include m.flex-column($justify: null, $direction: column);
     gap: 2rem;
 
-    &--playlist-small {
-        max-width: 35rem;
-        max-height: 68rem;
-        padding: 1rem;
-    }
-
-
     &__img {
         max-width: 40rem;
         max-height: 40rem;
 
-        &--playlist-small {
-            max-width: 32rem;
-            max-height: 32rem;
-        }
     }
 }
 

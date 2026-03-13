@@ -76,6 +76,17 @@ Along with the new layouts, I've updated the stylesheets to ensure a consistent 
   preview/(<preview/127.0.0.1_5500_home.html (7).png>),
   preview/(<preview/127.0.0.1_5500_home.html (8).png>),
   preview/(<preview/127.0.0.1_5500_home.html (9).png>),
-  preview/(<preview/127.0.0.1_5500_home.html (10).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (10).png>).
+
+  # I partially finished the project
+   Made some adjustments and applied the gradient for the first time.
+
+      # Added preview file:
+  preview/(<preview/127.0.0.1_5500_home.html (11).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (12).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (13).png>),
+  preview/(<preview/127.0.0.1_5500_home.html (14).png>).
+  preview/(<preview/127.0.0.1_5500_home.html (15).png>).
+
 
   

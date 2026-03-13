@@ -7,12 +7,11 @@
 
 
 
-.about-artist-page {
+.list-albums-page {
 
     .main-app-container {
         width: 100%;
         height: 100vh;
-       
 
         display: grid;
         grid-template-columns: 25.9rem 1fr 1fr;
@@ -31,7 +30,7 @@
         grid-area: sidebar;
     }
 
-    .about-artist-content {
+    .list-albums-content {
         grid-area: main;
         @include m.page-border;
     }
@@ -41,44 +40,43 @@
     }
 }
 
-.about-artist-container {
+.list-albums-card-container {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 1rem;
+    @include m.flex-column($justify: center, $direction: column);
+}
 
+.list-albums__card {
+    width: 98%;
+    height: 17rem;
+    margin: 0 auto;
+    @include m.flex-between;
+    border-bottom: 0.1rem solid var.$border-color;
 
-    .table-info,
-    .about-artist-sticker {
-        flex: 0 1 22%;
-        min-width: 20rem;
-        padding: 2rem;
-    }
-
-
-    .artist-istory {
-        flex: 1 1 auto;
-        width: 76%;
-        padding: 1rem;
-
-        p {
-            font-size: 1.8rem;
-            line-height: 1.8;
-        }
+    figure {
+        width: 9%;
+        height: auto;
     }
 }
 
-.table-info__items {
-    tr {
-        height: 7rem;
-    }   
+.list-albums__card-description {
+    width: 90%;
+    height: 14rem;
+    padding: 0.5rem;
+    @include m.flex-column($direction: column);
+    gap: 0.6rem;
+
+}
+
+.playlist-artist__title--icon {
+    width: 99.5%;
+    height: 26%;
+    @include m.flex-between;
+
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
+
+        button {
+            width: 0.5%;
+        }
     }
-    h3 {
-        font-size: 2.3rem;
-    }
-    
 }
