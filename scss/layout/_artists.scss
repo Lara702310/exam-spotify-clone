@@ -52,7 +52,7 @@
     height: 42rem;
     padding: 2rem;
     background: var.$bg-avatar,
-        url(../../assets/image/image111.png);
+        url(../../assets/image/images111.png);
     @include m.flex-box($justify: space-between, $align: flex-end);
 }
 
