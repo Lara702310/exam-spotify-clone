@@ -386,7 +386,7 @@ html {
   content: "";
   width: 3rem;
   height: 3rem;
-  background-image: url(../assets/icons/iconsIIbig.svg);
+  background-image: url(../../assets/icons/);
 }
 
 .music-card--artist {
@@ -403,7 +403,7 @@ html {
   padding: 0.2rem;
   background-repeat: no-repeat;
   border-radius: 50%;
-  background-image: url(../assets/icons/Vector38.svg);
+  background-image: url(../../assets/icons/Vector38.svg);
   background-position: center;
   background-color: rgb(17, 17, 17);
   position: absolute;
@@ -440,7 +440,7 @@ html {
   content: " ";
   width: 5rem;
   height: 5rem;
-  background-image: url(../assets/icons/icons-xxbig.svg);
+  background-image: url(../../assets/icons/icons-xxbig.svg);
   position: absolute;
   background-repeat: no-repeat;
   top: 1rem;
@@ -1207,7 +1207,7 @@ hr {
   width: 100%;
   height: 42rem;
   padding: 2rem;
-  background: linear-gradient(rgba(1, 0, 1, 0.2), rgba(0, 0, 0, 0.7)), url(../assets/image/images111.png);
+  background: linear-gradient(rgba(1, 0, 1, 0.2), rgba(0, 0, 0, 0.7)), url(../../assets/image/images111.png);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
